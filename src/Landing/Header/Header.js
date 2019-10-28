@@ -3,14 +3,14 @@ import './header.sass';
 import { Navbar, Nav, Jumbotron } from 'react-bootstrap';
 export default function Header() {
     return (
-        <div className="header">
+        <div className="header" id='home'>
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="#home">Алексей Аксенов</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="#home">Главная</Nav.Link>
-                        <Nav.Link href="#link">Личное</Nav.Link>
+                        <Nav.Link href="#personal">Личное</Nav.Link>
                         <Nav.Link href="#home">Наука</Nav.Link>
                         <Nav.Link href="#home">Университет</Nav.Link>
                     </Nav>
