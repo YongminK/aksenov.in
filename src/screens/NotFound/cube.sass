@@ -1,0 +1,92 @@
+.cube
+	perspective: 1000px
+	perspective-origin: center -5em
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	.side,
+	.container
+		width: 10em!important
+		height: 10em
+
+
+	.container
+		transform-style: preserve-3d
+		animation: rotate 10s infinite ease-in-out
+	@keyframes rotate
+		16.5%
+			transform: rotate3d(0,1,0,-90deg)
+		33%
+			transform: rotate3d(0,1,0,-90deg) rotate3d(0,0,1,90deg)
+		50%
+			transform: rotate3d(0,1,0,-180deg) rotate3d(0,0,1,90deg)
+		66.5%
+			transform: rotate3d(0,1,0,-270deg) rotate3d(0,0,1,90deg)
+		83%
+			transform: rotate3d(0,1,0,-270deg)
+		100%
+			transform: rotate3d(0,1,0,-360deg)
+
+	.side
+		position: absolute
+		width: 10em
+		height: 10em
+		display: flex
+		justify-content: center
+		align-items: center
+		background-repeat: no-repeat
+		background-position: 50%  50%
+		background-size: 80%
+		box-shadow: inset 0 0 100px #999
+		background-color: #D3B282
+
+	.front
+		transform: translateZ(5em)
+		background-image: url("../../img/4.svg")
+
+	.back
+		transform: translateZ(-5em) scale(-1,-1) rotateZ(270deg)
+		background-image: url("../../img/0.svg")
+
+	.left
+		transform: translateX(-5em) rotateY(90deg) rotateZ(180deg)
+		background-image: url("../../img/0.svg")
+
+
+	.right
+		transform: translateX(5em) rotateY(90deg) rotateZ(-180deg) scale(-1,1)
+		background-image: url("../../img/0.svg")
+
+
+	.top
+		transform: translateY(-5em) rotateX(90deg) rotateZ(-90deg)
+		background-image: url("../../img/4.svg")
+
+		span
+			font-size: 5rem
+
+
+	.bottom
+		transform: translateY(5em) rotateX(90deg) rotateZ(-90deg) scale(-1,1)
+		background-image: url("../../img/4.svg")
+	.not-found
+		margin-top: 10%
+		text-transform: uppercase
+		font-family: 'Anton'
+		font-size: 5rem
+		text-align: center
+@media screen and (min-width: 319px)
+	.cube
+		.not-found
+			margin-top: 20%
+@media screen and (min-width: 1200px)
+	.cube
+		.not-found
+			margin-top: 10%
+
+
+
+
+
