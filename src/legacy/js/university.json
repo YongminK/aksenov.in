@@ -1,0 +1,212 @@
+{
+        "id": "root",
+        "name": "ГУАП",
+        "data": {},
+        "children": [{
+            "id": "guap",
+            "name": "Общее",
+            "data": {"url": "./guap/"},
+            "children": []
+        }, {
+            "id": "guapdisc",
+            "name": "Предмет",
+            "data": {},
+            "children": [{
+                "id": "db",
+                "name": "БД",
+                "data": {},
+                "children": [{
+                    "id": "oldies",
+                    "name": "Архив",
+                    "data": "",
+                    "children": [ {
+                        "id": "2012",
+                        "name": "2012",
+                        "data": {},
+                        "children": [{
+                            "id": "2012ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2012/ss"},
+                            "children": []
+                        }, {
+                            "id": "2012fw",
+                            "name": "осень",
+                            "data": {"url": "./guap/db/2012/fw"},
+                            "children": []
+                        }]
+                    }, {
+                        "id": "2013",
+                        "name": "2013",
+                        "data": {},
+                        "children": [{
+                            "id": "2013ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2013/ss"},
+                            "children": []
+                        }, {
+                            "id": "2013fw",
+                            "name": "осень",
+                            "data": {"url": "./guap/db/2013/fw"},
+                            "children": []
+                        }]
+                    }, {
+                        "id": "2014",
+                        "name": "2014",
+                        "data": {},
+                        "children": [{
+                            "id": "2014ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2014/ss"},
+                            "children": []
+                        }, {
+                            "id": "2014fw",
+                            "name": "осень",
+                            "data": {"url": "./guap/db/2014/fw"},
+                            "children": []
+                        }]
+                    }
+                    , {
+                        "id": "2015",
+                        "name": "2015",
+                        "data": {},
+                        "children": [{
+                            "id": "2015ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2015/ss"},
+                            "children": []
+                        }, {
+                            "id": "2015fw",
+                            "name": "осень",
+                            "data": {"url": "./guap/db/2015/fw"},
+                            "children": []
+                        }]
+                    }, {
+                        "id": "2016",
+                        "name": "2016",
+                        "data": {},
+                        "children": [{
+                            "id": "2016ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2016/ss"},
+                            "children": []
+                        }, {
+                            "id": "2016fw",
+                            "name": "осень",
+                            "data": {"url": "./guap/db/2016/fw"},
+                            "children": []
+                        }]
+                    }, {
+                        "id": "2017",
+                        "name": "2017",
+                        "data": {},
+                        "children": [{
+                            "id": "2017ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2017/ss"},
+                            "children": []
+                        }, {
+                            "id": "2017fw",
+                            "name": "осень",
+                            "data": {"url": "./guap/db/2017/fw"},
+                            "children": []
+                        }]
+                    }, {
+                        "id": "2018",
+                        "name": "2018",
+                        "data": {},
+                        "children": [{
+                            "id": "2018ss",
+                            "name": "весна",
+                            "data": {"url": "./guap/db/2018/ss"},
+                            "children": []
+                        }]
+                    }]
+                }, {
+                    "id": "2019",
+                    "name": "2019",
+                    "data": {},
+                    "children": [{
+                        "id": "2019ss",
+                        "name": "весна",
+                        "data": {"url": "./guap/db/2019/ss"},
+                        "children": []
+                    }]
+                }, {
+                    "id": "dbcourse",
+                    "name": "Курсовик",
+                    "data": {},
+                    "children": [{
+                        "id": "dbcoursesql",
+                        "name": "SQL",
+                        "data": {"url": "https://www.dropbox.com/s/izcy4izxou2k8ro/course.pdf"},
+                        "children": []
+                    }, {
+                        "id": "dbcoursemongo",
+                        "name": "MongoDB",
+                        "data": {"url": "./guap/db/mongo.html"},
+                        "children": []
+                    }]
+                }, {
+                    "id": "dbextra",
+                    "name": "Материалы",
+                    "data": {},
+                    "children": [{
+                        "id": "dbra",
+                        "name": "Тренажер РА",
+                        "data": {"url": "./ra"},
+                        "children": []
+                    }, {
+                        "id": "dbtut",
+                        "name": "Пособие",
+                        "data": {"url": "https://www.dropbox.com/s/pfxpdfz5j4bpaty/sqlite.pdf"},
+                        "children": []
+                    }, {
+                        "id": "dbmet",
+                        "name": "Метода",
+                        "data": {"url": "https://github.com/db-course/syllabus"},
+                        "children": []
+                    }, {
+                        "id": "dbwiki",
+                        "name": "Конспект",
+                        "data": {"url": "./guap/db/lectures"},
+                        "children": []
+                    }]
+                }]
+            }, {
+                "id": "ICG",
+                "name": "ИКГ",
+                "data": {},
+                "children": [{
+                    "id": "ICGcat",
+                    "name": "Примеры",
+                    "data": {"url": "./guap/x3dom/"},
+                    "children": []
+                }, {
+                    "id": "ICGtut",
+                    "name": "Пособие",
+                    "data": {"url": "https://www.dropbox.com/s/xbbbyn6smvmcf2i/posobie_x3dom_2019.pdf"},
+                    "children": []
+                }, {
+                    "id": "ICGmet",
+                    "name": "Метода",
+                    "data": {"url": "https://www.dropbox.com/s/nhay2aucadu1y3s/labworks.pdf"},
+                    "children": []
+                }]
+            }]
+        }, {
+            "id": "diploma",
+            "name": "Диплом",
+            "data": {},
+            "children": [{
+                "id": "grads",
+                "name": "История",
+                "data": {"url": "./guap/grads.html"},
+                "children": []
+            }, {
+                "id": "currentdiploma",
+                "name": "Актуальное",
+                "data": {"url": "javascript:void(0);"},
+                "children": []
+            }]
+        }]
+}

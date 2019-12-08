@@ -1,0 +1,15 @@
+
+#log {
+    font-size:0.8em;
+    color:#000;
+    text-align: center;
+}
+
+
+#infovis {
+    position:relative;
+    width:600px;
+    height: 320px;
+    margin:auto;
+    overflow:hidden;
+}

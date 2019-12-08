@@ -1,0 +1,281 @@
+body {
+  background: #333;
+  height: 100%;
+  margin: 0px !important;
+  font-family: 'Cousine', monospace;
+}
+
+.meny {
+    font-size: 12px;
+    color: #888;
+    padding: 10px;
+}
+
+.meny h2 {
+  font-size: 24px;
+	color: #ffb;
+}
+.meny a {
+	color: #ffe;
+}
+.meny ul {
+		margin-top: 10px;
+    padding: 10px;
+	}
+		.meny ul li {
+			display: inline-block;
+			/*width: 200px;*/
+			list-style: none;
+			font-size: 16px;
+			color: #ccc;
+			padding: 3px 10px;
+		}
+			.meny ul li:before {
+				content: '~';
+				margin-right: 5px;
+				color: rgba( 255, 255, 255, 0.4 );
+			}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  z-index: 0;
+}
+
+.particles-js-canvas-el { /* sorry */
+  position: absolute;
+  top: 0;
+}
+
+.perspective {
+  position: relative;
+  -webkit-perspective: 75em;
+          perspective: 75em;
+  -webkit-perspective-origin: 50% 60%;
+          perspective-origin: 50% 60%;
+  width: 970px;
+  margin: 0 auto;
+  
+  font-weight: 100;
+  color: #000;
+  text-align: center;
+  padding-top: 60px;
+  z-index: 1; /* over the particles */
+}
+
+input {
+  display: none;
+}
+
+.menupointer {
+  position: absolute;
+  left: 0;  
+  -webkit-transition: opacity 0.5s ease 0.5s;
+     -moz-transition: opacity 0.5s ease 0.5s;
+      -ms-transition: opacity 0.5s ease 0.5s;
+       -o-transition: opacity 0.5s ease 0.5s;
+          transition: opacity 0.5s ease 0.5s;
+}
+
+.meny-active .menupointer {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+       -moz-transition: opacity 0.5s ease;
+        -ms-transition: opacity 0.5s ease;
+         -o-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease;
+}
+
+html {
+  height: 100%;
+}
+
+.contents {
+  height: 100%;
+  background: #eee;
+}
+
+#content {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.tab {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  right: 0;
+  line-height: 70px;
+  font-weight: 300;
+  font-size: 13pt;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.8s ease-in;
+  transition: -webkit-transform 0.8s ease-in;
+  transition: transform 0.8s ease-in;
+  transition: transform 0.8s ease-in, -webkit-transform 0.8s ease-in;
+  -webkit-transform: translateZ(0px);
+        transform: translateZ(0px);
+  z-index: 10; /* i hate you, google chrome, i really do */
+}
+.tab:nth-child(2) {
+  top: 60px;
+  background: linear-gradient(90deg, #d8ccad, #d8cc66);
+  background-size: 150% 150%;
+  animation-name: GradAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.tab:nth-child(4) {
+  top: 160px;
+  background: linear-gradient(90deg, #d8b58f, #d8b511);
+  background-size: 150% 150%;
+  animation-name: GradAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.tab:nth-child(6) {
+  top: 260px;
+  background: linear-gradient(90deg, #9399bf, #6666bf);
+  background-size: 150% 150%;
+  animation-name: GradAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.tab:nth-child(8) {
+  top: 360px;
+  z-index: 9;  /* i hate you, google chrome, i really do */
+  background: linear-gradient(90deg, #93bf98, #11bf11);
+  background-size: 150% 150%;
+  animation-name: GradAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.cube {
+  position: relative;
+  margin: 0 auto 0;
+  width: 600px;
+  height: 400px;
+  transition: opacity 10s ease;
+  -webkit-transform-origin: 0 200px -100px;
+          transform-origin: 0 200px -100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.tab-content {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  text-align: justify;
+}
+.tab-content h1 {
+  font-size: 25px;
+  margin: 15px 30px;
+  font-weight: 300;
+}
+.tab-content div.lyrics {
+  margin: 10px 20px 0;
+  font-size: 14px;
+}
+.tab-content div.rare {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.tab-content div.never {
+  font-size: 14px;
+  opacity: 0.1;
+}
+.tab-content:nth-child(2) {
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+  background: #d8b58f;
+}
+.tab-content:nth-child(1) {
+  -webkit-transform: rotateX(-270deg) translateY(-100px) translateZ(200px);
+          transform: rotateX(-270deg) translateY(-100px) translateZ(200px);
+  background: #d8ccad;
+  background-image: url("./../img/me.png");
+    background-repeat: no-repeat;
+    background-position: right bottom
+}
+.tab-content:nth-child(3) {
+  -webkit-transform: rotateX(-90deg) translateY(100px) translateZ(200px);
+          transform: rotateX(-90deg) translateY(100px) translateZ(200px);
+  background: #9399bf;
+}
+.tab-content:nth-child(4) {
+  -webkit-transform: rotateX(-180deg) translateZ(300px);
+          transform: rotateX(-180deg) translateZ(300px);
+  background: #93bf98;
+  background-image: url("./../img/piglet.png");
+    background-repeat: no-repeat;
+    background-position: left bottom
+}
+
+#tab-top:checked ~ .cube {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+#tab-front:checked ~ .cube {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+#tab-bottom:checked ~ .cube {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+#tab-back:checked ~ .cube {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+#tab-top:checked + .tab {
+  -webkit-transform: translateZ(210px) translateX(-80px);
+          transform: translateZ(210px) translateX(-80px);
+}
+#tab-bottom:checked + .tab {
+  -webkit-transform: translateZ(210px) translateX(-80px);
+          transform: translateZ(210px) translateX(-80px);
+}
+#tab-back:checked + .tab {
+  -webkit-transform: translateZ(210px) translateX(-80px);
+          transform: translateZ(210px) translateX(-80px);
+}
+#tab-front:checked + .tab {
+  -webkit-transform: translateZ(210px) translateX(-80px);
+          transform: translateZ(210px) translateX(-80px);
+}
+
+@-webkit-keyframes GradAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
