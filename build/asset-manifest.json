@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c1581ef.chunk.css",
+    "main.js": "/static/js/main.72e04442.chunk.js",
+    "main.js.map": "/static/js/main.72e04442.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9c546136.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9c546136.js.map",
+    "static/css/2.116a8113.chunk.css": "/static/css/2.116a8113.chunk.css",
+    "static/js/2.d81bd485.chunk.js": "/static/js/2.d81bd485.chunk.js",
+    "static/js/2.d81bd485.chunk.js.map": "/static/js/2.d81bd485.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8fae0be558af78e23c7a84aea3f6506f.js": "/precache-manifest.8fae0be558af78e23c7a84aea3f6506f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.116a8113.chunk.css.map": "/static/css/2.116a8113.chunk.css.map",
+    "static/css/main.0c1581ef.chunk.css.map": "/static/css/main.0c1581ef.chunk.css.map",
+    "static/media/cube.sass": "/static/media/4.087d2e3e.svg",
+    "static/media/main.css": "/static/media/piglet.c006dcd5.png",
+    "static/media/header.sass": "/static/media/rF_2XOmugvs.7aa0c19a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c546136.js",
+    "static/css/2.116a8113.chunk.css",
+    "static/js/2.d81bd485.chunk.js",
+    "static/css/main.0c1581ef.chunk.css",
+    "static/js/main.72e04442.chunk.js"
+  ]
+}
