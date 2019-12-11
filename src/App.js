@@ -11,7 +11,7 @@ function App() {
 
             <Switch>
                 <Route exact path='/' component={Main}/>
-                <Route exact path='/404' component={Cube}/>
+                <Route component={Cube}/>
             </Switch>
 
         </>
