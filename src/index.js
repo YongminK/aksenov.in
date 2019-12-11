@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'react-tree-graph/dist/style.css'
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename='/test'>
         <App />
     </BrowserRouter>
 
