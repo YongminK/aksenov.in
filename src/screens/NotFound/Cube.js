@@ -6,7 +6,7 @@ export default class Cube extends React.Component{
     }
     render() {
         return(
-            <div className='cube'>
+            <div className='cube-404'>
                 <div className="container">
                     <div className="back side"></div>
                     <div className="left side"></div>
