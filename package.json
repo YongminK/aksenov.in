@@ -1,7 +1,7 @@
 {
   "name": "aksenov.in",
   "version": "0.1.0",
-  "homepage": "https://aksenov.in",
+  "homepage": "https://aksenov.in/test",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
