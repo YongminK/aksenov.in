@@ -301,8 +301,24 @@ html {
     .perspective, .cube, .tab-content{
         width: 50vw;
     }
+    /*.tab-content, .cube{*/
+    /*    height: 60vh;*/
+    /*}*/
+    /*.tab-content:first-of-type{*/
+    /*    transform:rotateX(-270deg) translateZ(30vh);*/
+    /*}*/
+    /*.tab-content:nth-child(2){*/
+    /*    transform: translateZ(20vh);*/
+    /*}*/
+    /*.tab-content:nth-child(3){*/
+    /*    transform: rotateX(-90deg) translateZ(30vh);*/
+    /*}*/
+    /*.tab-content:nth-child(4){*/
+    /*    transform: rotateX(-180deg)  translateZ(30vh);*/
+    /*}*/
     .perspective{
-        margin: 0 auto
+        margin: 0 auto;
+        margin-top: 10vh;
     }
 }
 
