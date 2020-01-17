@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Aleksei Aksenov</title>
+	<link rel="stylesheet" href="./css/comingsoon.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+</head>
+<body>
+
+	<!-- Тут нет печенек. По крайней мере для тебя. -->
+	<script>
+	function daydiff(first, second) {
+		return Math.round((second-first)/(1000*60*60*24));
+	}
+	</script>
+
+	<div class="poem">
+		<div>По сайту стили бегают,</div>
+		<div>Скриптами хостинг сжат,</div>
+		<div>Под длинными запросами провайдеры лежат.</div>
+		<div>По RAID-массиву ползает и шепчет байту байт:</div>
+		<div>Терпеть еще недолго, <span class="soon">здесь будет скоро сайт.</span></div>
+		<div class="days">P.S.: Это здесь уже 
+        <script>
+            var d = daydiff(new Date(2017,2,7), new Date());
+            var s = "дьянйе ";
+            var m = [s[0]+s[3]+s[5]+s[4],s[0]+s[5]+s[3]+s[1],s[0]+s[3]+s[2]];
+            var n = [1, 5, 10, 15, 100];
+            document.write(d);
+            document.write(s[6]);
+            document.write(((d%n[4]>n[2])&&(d%n[4]<n[3]))?m[0]:(d%n[2]==n[0])?m[1]:((d%n[2]>n[0])&&(d%n[2]<n[1]))?m[2]:m[0]);
+        </script>.</div>
+	</div>
+
+	<script>
+		$(".poem:first").children().hide().each(function(i){
+	  		$(this).delay(i*2500).fadeIn(1000);
+		});
+	</script>
+	<!-- Я же говорил. -->
+</body>
+</html>

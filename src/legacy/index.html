@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/st.css">
+    <title>Aleksei Aksenov</title>  
+    <link href="https://fonts.googleapis.com/css?family=Cousine&amp;subset=cyrillic" rel="stylesheet"> 
+</head>
+<body>
+    <div class="meny">
+        <h2>Быстрые ссылки для студентов</h2>
+        <ul>
+            <li><a href="./guap/x3dom" target="_blank">ИКГ</a></li>
+            <li><a href="./guap/db/2019/ss" target="_blank">Текущий семестр БД</a></li>
+            <li><a href="./guap/db/2018/ss" target="_blank">Прошлый семестр БД</a></li>
+        </ul>
+        <h2>(Некоторые) подсайты</h2>
+        <ul>
+            <li><a href="https://blog.aksenov.in" target="_blank">blog</a>.aksenov.in</li>
+            <li><a href="https://blog.aksenov.in/ru" target="_blank">блог</a>.aksenov.in</li>
+            <li><a href="https://poll.aksenov.in" target="_blank">poll</a>.aksenov.in</li> (fixme)
+            <li><a href="https://todo.aksenov.in" target="_blank">todo</a>.aksenov.in</li>
+        </ul>
+        <h2>Машина времени</h2>
+        Как выглядел сайт в разные периоды времени
+        <ul>
+            <li>сайт <a href="javascript:void(0);" onclick="time_travel(1);">v 1.0</a></li> (2010-2013)
+            <li>сайт <a href="javascript:void(0);" onclick="time_travel(2);">v 2.0</a></li> (2013-2016)
+            <li>сайт <a href="javascript:void(0);" onclick="time_travel(3);">v 3.0</a></li> (2016)
+            <li>сайт <a href="javascript:void(0);" onclick="time_travel(4);">v 4.0</a></li> (март 2017)
+            <li>сайт <a href="javascript:void(0);" onclick="present_times();">v 5.0</a></li> (2017-...)
+        </ul>
+    </div>
+
+    <div class="contents">
+      <div id="content">
+          <div id="particles-js">
+              <div class="menupointer"><img src="img/arrow.png" alt="something here!"></div>
+              <div class="perspective">
+                <input type="radio" name="tabs" id="tab-top">
+                <label class="tab" for="tab-top">👤 личное</label>
+                <input type="radio" name="tabs" id="tab-front" checked>
+                <label class="tab" for="tab-front">⌂</label>
+                <input type="radio" name="tabs" id="tab-bottom"> 
+                <label class="tab" for="tab-bottom">⚛ наука</label>
+                <input type="radio" name="tabs" id="tab-back" onclick="init();">
+                <label class="tab" for="tab-back">🎓 университет</label>
+                <div class="cube">
+                  <div class="tab-content">
+                    <h1>Обо мне</h1>
+                    <div class="lyrics">
+                      Имею высшее образование, неоконченную степень кандидата технических наук. Увлекаюсь программированием, психологией, педагогикой, музыкой (когда-то &ndash; играть, теперь &ndash; слушать). Люблю чай, пешие прогулки и общество умных людей. Ненавижу &ndash; все остальное.<br>
+                      У меня есть почта: me@этот_сайт. Также по сети разбросаны мои аккаунты в различных сервисах.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;захожу часто<br>
+                      вк &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://vk.com/aksenoff" target="_blank">vk.com/aksenoff</a><br>
+                      телеграм &nbsp;&nbsp;&mdash; <a href="https://t.me/aksenoff" target="_blank">t.me/aksenoff</a><br>
+                      гитхаб &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://github.com/aksenoff" target="_blank">github.com/aksenoff</a><br>
+                      твиттер &nbsp;&nbsp;&nbsp;&mdash; <a href="https://twitter.com/aksenoff" target="_blank">twitter.com/aksenoff</a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;захожу не очень часто
+                      <div class="rare">
+                        инстаграм &nbsp;&mdash; <a href="https://instagr.am/aksenoff" target="_blank">instagr.am/aksenoff</a><br>
+                        фейсбук &nbsp;&nbsp;&nbsp;&mdash; <a href="https://fb.com/aksenoff" target="_blank">fb.com/aksenoff</a>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;не захожу вообще
+                      <div class="never">
+                        <!-- стак &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://dba.stackexchange.com/users/33055/aksenoff" target="_blank">dba.stackexchange...aksenoff</a><br> -->
+                        делишез &nbsp;&nbsp;&nbsp;&mdash; <a href="https://del.icio.us/aksenoff" target="_blank">del.icio.us/aksenoff</a><br>
+                        тумблер &nbsp;&nbsp;&nbsp;&mdash; <a href="https://aksenoff.tumblr.com" target="_blank">aksenoff.tumblr.com</a><br>
+                        хабр &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://habr.com/users/xnv/" target="_blank">habr.com/users/xnv</a><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div class="intro">
+                      <h1>Добрый день</h1>
+                      <div class="lyrics">
+                        Меня зовут Алексей.<br>
+                        Хотя если вы студент, для вас &ndash; Алексей Владимирович.<br>
+                        Это главная страница сайта, где собрана вся или почти вся информация, касающаяся меня, которую вам может потребоваться знать и которую я счел нужным предоставить.<br>
+                        ☞ Справа есть вкладки-разделы по темам.<br>
+                        ☜ Слева прячется меню, там быстрые ссылки на важные вещи.<br>
+                        <br>
+                        Этот сайт находится в процессе постоянного обновления, переработки и наполнения. Ведь, как известно, совершенству нет предела (и прокрастинации &ndash; тоже).<br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <h1>⚛</h1>
+                    <div class="lyrics">
+                      Вам <a href="./guap/science/" target="_blank">сюда</a>.
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div class="lyrics">
+                      Исторически сложилось, что я работаю преподавателем в СПбГУАП. Попытавшись визуально структурировать свою деятельность там и разделы сайта, которые это описывают, я получил вот это:
+                    </div>
+                    <div id="infovis"></div>
+                    <div id="log"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">Алексей Аксенов, <script>document.write(new Date().getFullYear());</script></div>
+              <script src="./js/meny.min.js"></script>
+              <script src="./js/particles.min.js"></script>
+              <script src="./js/jquery-3.1.1.min.js"></script>
+              <script src="./js/spacetree_jit.js"></script>
+              <script src="./js/st.js"></script>
+              <script src="./js/main.js"></script>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
