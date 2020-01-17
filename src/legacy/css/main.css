@@ -289,7 +289,7 @@ html {
         perspective-origin: center;
     }
     .tab-content:nth-child(1){
-        transform: rotateX(-270deg) translateY(9vh) translateZ(14vh);
+        transform: rotateX(-270deg) translateY(-9vh) translateZ(14vh);
     }
     .tab-content:nth-child(2){
         transform: translateZ(6vh);
@@ -311,7 +311,7 @@ html {
 @media screen and (min-width: 768px) {
     .perspective{
         width: 70vw;
-        height: 40vh;
+        /*height: 40vh;*/
         margin-right: 10vw;
         margin-left: 10vw;
     }
