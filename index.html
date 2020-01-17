@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="src/legacy/css/main.css">
     <link rel="stylesheet" href="src/legacy/css/st.css">
+    <link rel="stylesheet" href="src/legacy/css/qube.css">
     <title>Aleksei Aksenov</title>  
     <link href="https://fonts.googleapis.com/css?family=Cousine&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
@@ -37,69 +38,99 @@
       <div id="content">
           <div id="particles-js">
               <div class="menupointer"><img src="src/legacy/img/arrow.png" alt="something here!"></div>
-              <div class="perspective">
-                <input type="radio" name="tabs" id="tab-top">
-                <label class="tab" for="tab-top">👤 личное</label>
-                <input type="radio" name="tabs" id="tab-front" checked>
-                <label class="tab" for="tab-front">⌂</label>
-                <input type="radio" name="tabs" id="tab-bottom"> 
-                <label class="tab" for="tab-bottom">⚛ наука</label>
-                <input type="radio" name="tabs" id="tab-back" onclick="init();">
-                <label class="tab" for="tab-back">🎓 университет</label>
-                <div class="cube">
-                  <div class="tab-content">
-                    <h1>Обо мне</h1>
-                    <div class="lyrics">
-                      Имею высшее образование, неоконченную степень кандидата технических наук. Увлекаюсь программированием, психологией, педагогикой, музыкой (когда-то &ndash; играть, теперь &ndash; слушать). Люблю чай, пешие прогулки и общество умных людей. Ненавижу &ndash; все остальное.<br>
-                      У меня есть почта: me@этот_сайт. Также по сети разбросаны мои аккаунты в различных сервисах.<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;захожу часто<br>
-                      вк &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://vk.com/aksenoff" target="_blank">vk.com/aksenoff</a><br>
-                      телеграм &nbsp;&nbsp;&mdash; <a href="https://t.me/aksenoff" target="_blank">t.me/aksenoff</a><br>
-                      гитхаб &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://github.com/aksenoff" target="_blank">github.com/aksenoff</a><br>
-                      твиттер &nbsp;&nbsp;&nbsp;&mdash; <a href="https://twitter.com/aksenoff" target="_blank">twitter.com/aksenoff</a><br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;захожу не очень часто
-                      <div class="rare">
-                        инстаграм &nbsp;&mdash; <a href="https://instagr.am/aksenoff" target="_blank">instagr.am/aksenoff</a><br>
-                        фейсбук &nbsp;&nbsp;&nbsp;&mdash; <a href="https://fb.com/aksenoff" target="_blank">fb.com/aksenoff</a>
-                      </div>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;не захожу вообще
-                      <div class="never">
-                        <!-- стак &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://dba.stackexchange.com/users/33055/aksenoff" target="_blank">dba.stackexchange...aksenoff</a><br> -->
-                        делишез &nbsp;&nbsp;&nbsp;&mdash; <a href="https://del.icio.us/aksenoff" target="_blank">del.icio.us/aksenoff</a><br>
-                        тумблер &nbsp;&nbsp;&nbsp;&mdash; <a href="https://aksenoff.tumblr.com" target="_blank">aksenoff.tumblr.com</a><br>
-                        хабр &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://habr.com/users/xnv/" target="_blank">habr.com/users/xnv</a><br>
-                      </div>
-                    </div>
+<!--              <div class="perspective">-->
+<!--                                  <input type="radio" name="tabs" id="tab-top">-->
+<!--                <label class="tab" for="tab-top">👤 личное</label>-->
+<!--                <input type="radio" name="tabs" id="tab-front" checked>-->
+<!--                <label class="tab" for="tab-front">⌂</label>-->
+<!--                <input type="radio" name="tabs" id="tab-bottom"> -->
+<!--                <label class="tab" for="tab-bottom">⚛ наука</label>-->
+<!--                <input type="radio" name="tabs" id="tab-back" onclick="init();">-->
+<!--                <label class="tab" for="tab-back">🎓 университет</label>-->
+<!--                <div class="qube cube">-->
+<!--                  <div class="tab-content">-->
+<!--                    <h1>Обо мне</h1>-->
+<!--                    <div class="lyrics">-->
+<!--                      Имею высшее образование, неоконченную степень кандидата технических наук. Увлекаюсь программированием, психологией, педагогикой, музыкой (когда-то &ndash; играть, теперь &ndash; слушать). Люблю чай, пешие прогулки и общество умных людей. Ненавижу &ndash; все остальное.<br>-->
+<!--                      У меня есть почта: me@этот_сайт. Также по сети разбросаны мои аккаунты в различных сервисах.<br>-->
+<!--                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;захожу часто<br>-->
+<!--                      вк &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://vk.com/aksenoff" target="_blank">vk.com/aksenoff</a><br>-->
+<!--                      телеграм &nbsp;&nbsp;&mdash; <a href="https://t.me/aksenoff" target="_blank">t.me/aksenoff</a><br>-->
+<!--                      гитхаб &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://github.com/aksenoff" target="_blank">github.com/aksenoff</a><br>-->
+<!--                      твиттер &nbsp;&nbsp;&nbsp;&mdash; <a href="https://twitter.com/aksenoff" target="_blank">twitter.com/aksenoff</a><br>-->
+<!--                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;захожу не очень часто-->
+<!--                      <div class="rare">-->
+<!--                        инстаграм &nbsp;&mdash; <a href="https://instagr.am/aksenoff" target="_blank">instagr.am/aksenoff</a><br>-->
+<!--                        фейсбук &nbsp;&nbsp;&nbsp;&mdash; <a href="https://fb.com/aksenoff" target="_blank">fb.com/aksenoff</a>-->
+<!--                      </div>-->
+<!--                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;не захожу вообще-->
+<!--                      <div class="never">-->
+<!--                        &lt;!&ndash; стак &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://dba.stackexchange.com/users/33055/aksenoff" target="_blank">dba.stackexchange...aksenoff</a><br> &ndash;&gt;-->
+<!--                        делишез &nbsp;&nbsp;&nbsp;&mdash; <a href="https://del.icio.us/aksenoff" target="_blank">del.icio.us/aksenoff</a><br>-->
+<!--                        тумблер &nbsp;&nbsp;&nbsp;&mdash; <a href="https://aksenoff.tumblr.com" target="_blank">aksenoff.tumblr.com</a><br>-->
+<!--                        хабр &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; <a href="https://habr.com/users/xnv/" target="_blank">habr.com/users/xnv</a><br>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="tab-content front">-->
+<!--                    <div class="intro">-->
+<!--                      <h1>Добрый день</h1>-->
+<!--                      <div class="lyrics">-->
+<!--                        Меня зовут Алексей.<br>-->
+<!--                        Хотя если вы студент, для вас &ndash; Алексей Владимирович.<br>-->
+<!--                        Это главная страница сайта, где собрана вся или почти вся информация, касающаяся меня, которую вам может потребоваться знать и которую я счел нужным предоставить.<br>-->
+<!--                        ☞ Справа есть вкладки-разделы по темам.<br>-->
+<!--                        ☜ Слева прячется меню, там быстрые ссылки на важные вещи.<br>-->
+<!--                        <br>-->
+<!--                        Этот сайт находится в процессе постоянного обновления, переработки и наполнения. Ведь, как известно, совершенству нет предела (и прокрастинации &ndash; тоже).<br>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="tab-content top">-->
+<!--                    <h1>⚛</h1>-->
+<!--                    <div class="lyrics">-->
+<!--                      Вам <a href="./guap/science/" target="_blank">сюда</a>.-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="tab-content">-->
+<!--                    <div class="lyrics">-->
+<!--                      Исторически сложилось, что я работаю преподавателем в СПбГУАП. Попытавшись визуально структурировать свою деятельность там и разделы сайта, которые это описывают, я получил вот это:-->
+<!--                    </div>-->
+<!--                    <div id="infovis"></div>-->
+<!--                    <div id="log"></div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+              <div class="qube-perspective sq-25">
+                  <input type="radio" name="tabs" id="tab-top">
+                  <label class="tab" for="tab-top">👤 личное</label>
+                  <input type="radio" name="tabs" id="tab-front" checked>
+                  <label class="tab" for="tab-front">⌂</label>
+                  <input type="radio" name="tabs" id="tab-bottom">
+                  <label class="tab" for="tab-bottom">⚛ наука</label>
+                  <input type="radio" name="tabs" id="tab-back" onclick="init();">
+                  <label class="tab" for="tab-back">🎓 университет</label>
+                  <div class="qube-preserve3d">
+                      <ul class="qube cube03">
+                          <li class="front">
+                              <div class="intro">
+                                  <h1>Добрый день</h1>
+                                  <div class="lyrics">
+                                      Меня зовут Алексей.<br>
+                                      Хотя если вы студент, для вас &ndash; Алексей Владимирович.<br>
+                                      Это главная страница сайта, где собрана вся или почти вся информация, касающаяся меня, которую вам может потребоваться знать и которую я счел нужным предоставить.<br>
+                                      ☞ Справа есть вкладки-разделы по темам.<br>
+                                      ☜ Слева прячется меню, там быстрые ссылки на важные вещи.<br>
+                                      <br>
+                                      Этот сайт находится в процессе постоянного обновления, переработки и наполнения. Ведь, как известно, совершенству нет предела (и прокрастинации &ndash; тоже).<br>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="back"></li>
+                          <li class="top"></li>
+                          <li class="bottom"></li>
+                      </ul>
                   </div>
-                  <div class="tab-content">
-                    <div class="intro">
-                      <h1>Добрый день</h1>
-                      <div class="lyrics">
-                        Меня зовут Алексей.<br>
-                        Хотя если вы студент, для вас &ndash; Алексей Владимирович.<br>
-                        Это главная страница сайта, где собрана вся или почти вся информация, касающаяся меня, которую вам может потребоваться знать и которую я счел нужным предоставить.<br>
-                        ☞ Справа есть вкладки-разделы по темам.<br>
-                        ☜ Слева прячется меню, там быстрые ссылки на важные вещи.<br>
-                        <br>
-                        Этот сайт находится в процессе постоянного обновления, переработки и наполнения. Ведь, как известно, совершенству нет предела (и прокрастинации &ndash; тоже).<br>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-content">
-                    <h1>⚛</h1>
-                    <div class="lyrics">
-                      Вам <a href="./guap/science/" target="_blank">сюда</a>.
-                    </div>
-                  </div>
-                  <div class="tab-content">
-                    <div class="lyrics">
-                      Исторически сложилось, что я работаю преподавателем в СПбГУАП. Попытавшись визуально структурировать свою деятельность там и разделы сайта, которые это описывают, я получил вот это:
-                    </div>
-                    <div id="infovis"></div>
-                    <div id="log"></div>
-                  </div>
-                </div>
-              </div>
               <div class="footer">Алексей Аксенов, <script>document.write(new Date().getFullYear());</script></div>
               <script src="src/legacy/js/meny.min.js"></script>
               <script src="src/legacy/js/particles.min.js"></script>

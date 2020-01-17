@@ -1,7 +1,7 @@
 body {
-  height: 100%;
-  margin: 0px !important;
-  font-family: 'Cousine', monospace;
+    height: 100%;
+    margin: 0px !important;
+    font-family: 'Cousine', monospace;
 }
 
 .meny {
@@ -13,255 +13,255 @@ body {
 }
 
 .meny h2 {
-  font-size: 24px;
-	color: #ffb;
+    font-size: 24px;
+    color: #ffb;
 }
 .meny a {
-	color: #ffe;
+    color: #ffe;
 }
 .meny ul {
-		margin-top: 10px;
+    margin-top: 10px;
     padding: 10px;
-	}
-		.meny ul li {
-			display: inline-block;
-			/*width: 200px;*/
-			list-style: none;
-			font-size: 16px;
-			color: #ccc;
-			padding: 3px 10px;
-		}
-			.meny ul li:before {
-				content: '~';
-				margin-right: 5px;
-				color: rgba( 255, 255, 255, 0.4 );
-			}
+}
+.meny ul li {
+    display: inline-block;
+    /*width: 200px;*/
+    list-style: none;
+    font-size: 16px;
+    color: #ccc;
+    padding: 3px 10px;
+}
+.meny ul li:before {
+    content: '~';
+    margin-right: 5px;
+    color: rgba( 255, 255, 255, 0.4 );
+}
 
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #eee;
-  z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 0;
 }
 
 .particles-js-canvas-el { /* sorry */
-  position: absolute;
-  top: 0;
+    position: absolute;
+    top: 0;
 }
 
 .perspective {
-  position: relative;
-  -webkit-perspective: 75em;
-          perspective: 75em;
-  -webkit-perspective-origin: 50% 60%;
-          perspective-origin: 50% 60%;
-  width: 970px;
-  margin: 0 auto;
-  
-  font-weight: 100;
-  color: #000;
-  text-align: center;
-  padding-top: 60px;
-  z-index: 1; /* over the particles */
+    position: relative;
+    -webkit-perspective: 75em;
+    perspective: 75em;
+    -webkit-perspective-origin: 50% 60%;
+    perspective-origin: 50% 60%;
+    width: 970px;
+    margin: 0 auto;
+
+    font-weight: 100;
+    color: #000;
+    text-align: center;
+    padding-top: 60px;
+    z-index: 1; /* over the particles */
 }
 
 input {
-  display: none;
+    display: none;
 }
 
 .menupointer {
-  position: absolute;
-  left: 0;  
-  -webkit-transition: opacity 0.5s ease 0.5s;
-     -moz-transition: opacity 0.5s ease 0.5s;
-      -ms-transition: opacity 0.5s ease 0.5s;
-       -o-transition: opacity 0.5s ease 0.5s;
-          transition: opacity 0.5s ease 0.5s;
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 0.5s ease 0.5s;
+    -moz-transition: opacity 0.5s ease 0.5s;
+    -ms-transition: opacity 0.5s ease 0.5s;
+    -o-transition: opacity 0.5s ease 0.5s;
+    transition: opacity 0.5s ease 0.5s;
 }
 
 .meny-active .menupointer {
     opacity: 0;
     -webkit-transition: opacity 0.5s ease;
-       -moz-transition: opacity 0.5s ease;
-        -ms-transition: opacity 0.5s ease;
-         -o-transition: opacity 0.5s ease;
-            transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 .contents {
-  height: 100%;
-  background: #eee;
+    height: 100%;
+    background: #eee;
 }
 
 #content {
-  height: 100%;
+    height: 100%;
 }
 
 .footer {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .tab {
-  position: absolute;
-  width: 150px;
-  height: 100px;
-  right: 0;
-  line-height: 70px;
-  font-weight: 300;
-  font-size: 13pt;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 0.8s ease-in;
-  transition: -webkit-transform 0.8s ease-in;
-  transition: transform 0.8s ease-in;
-  transition: transform 0.8s ease-in, -webkit-transform 0.8s ease-in;
-  -webkit-transform: translateZ(0px);
-        transform: translateZ(0px);
-  z-index: 10; /* i hate you, google chrome, i really do */
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    right: 0;
+    line-height: 70px;
+    font-weight: 300;
+    font-size: 13pt;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.8s ease-in;
+    transition: -webkit-transform 0.8s ease-in;
+    transition: transform 0.8s ease-in;
+    transition: transform 0.8s ease-in, -webkit-transform 0.8s ease-in;
+    -webkit-transform: translateZ(0px);
+    transform: translateZ(0px);
+    z-index: 10; /* i hate you, google chrome, i really do */
 }
 .tab:nth-child(2) {
-  top: 60px;
-  background: linear-gradient(90deg, #d8ccad, #d8cc66);
-  background-size: 150% 150%;
-  animation-name: GradAnim;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+    top: 60px;
+    background: linear-gradient(90deg, #d8ccad, #d8cc66);
+    background-size: 150% 150%;
+    animation-name: GradAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .tab:nth-child(4) {
-  top: 160px;
-  background: linear-gradient(90deg, #d8b58f, #d8b511);
-  background-size: 150% 150%;
-  animation-name: GradAnim;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+    top: 160px;
+    background: linear-gradient(90deg, #d8b58f, #d8b511);
+    background-size: 150% 150%;
+    animation-name: GradAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .tab:nth-child(6) {
-  top: 260px;
-  background: linear-gradient(90deg, #9399bf, #6666bf);
-  background-size: 150% 150%;
-  animation-name: GradAnim;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+    top: 260px;
+    background: linear-gradient(90deg, #9399bf, #6666bf);
+    background-size: 150% 150%;
+    animation-name: GradAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .tab:nth-child(8) {
-  top: 360px;
-  z-index: 9;  /* i hate you, google chrome, i really do */
-  background: linear-gradient(90deg, #93bf98, #11bf11);
-  background-size: 150% 150%;
-  animation-name: GradAnim;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+    top: 360px;
+    z-index: 9;  /* i hate you, google chrome, i really do */
+    background: linear-gradient(90deg, #93bf98, #11bf11);
+    background-size: 150% 150%;
+    animation-name: GradAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .cube {
-  position: relative;
-  margin: 0 auto 10vh;
-  width: 100%;
-  height: 100%;
-  transition: opacity 10s ease;
-  -webkit-transform-origin: 0 200px -100px;
-          transform-origin: 0 200px -100px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-  transition: -webkit-transform 0.5s ease-in;
-  transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    /*position: relative;*/
+    /*margin: 0 auto 10vh;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    transition: opacity 10s ease;
+    -webkit-transform-origin: 0 200px -100px;
+    transform-origin: 0 200px -100px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 .tab-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  text-align: justify;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: justify;
 }
-.tab-content h1 {
-  font-size: 25px;
-  margin: 15px 30px;
-  font-weight: 300;
+h1 {
+    font-size: 25px;
+    margin: 15px 30px;
+    font-weight: 300;
 }
-.tab-content div.lyrics {
-  margin: 10px 20px 0;
-  font-size: 14px;
+.lyrics {
+    margin: 10px 20px 0;
+    font-size: 14px;
 }
-.tab-content div.rare {
-  font-size: 14px;
-  opacity: 0.5;
+.rare {
+    font-size: 14px;
+    opacity: 0.5;
 }
-.tab-content div.never {
-  font-size: 14px;
-  opacity: 0.1;
+.never {
+    font-size: 14px;
+    opacity: 0.1;
 }
 .tab-content:nth-child(2) {
-  -webkit-transform: translateZ(12vh);
-          transform: translateZ(12vh);
-  background: #d8b58f;
+    -webkit-transform: translateZ(12vh);
+    transform: translateZ(12vh);
+    background: #d8b58f;
 }
 .tab-content:nth-child(1) {
-  -webkit-transform: rotateX(-270deg) translateY(-15vh) translateZ(27vh);
-          transform: rotateX(-270deg) translateY(-15vh) translateZ(27vh);
-  background: #d8ccad;
-  background-image: url("../img/me.png");
+    -webkit-transform: rotateX(-270deg) translateY(-15vh) translateZ(27vh);
+    transform: rotateX(-270deg) translateY(-15vh) translateZ(27vh);
+    background: #d8ccad;
+    background-image: url("../img/me.png");
     background-repeat: no-repeat;
     background-position: right bottom
 }
 .tab-content:nth-child(3) {
-  -webkit-transform: rotateX(-90deg) translateY(14vh) translateZ(27vh);
-          transform: rotateX(-90deg) translateY(14vh) translateZ(27vh);
-  background: #9399bf;
+    -webkit-transform: rotateX(-90deg) translateY(14vh) translateZ(27vh);
+    transform: rotateX(-90deg) translateY(14vh) translateZ(27vh);
+    background: #9399bf;
 }
 .tab-content:nth-child(4) {
-  -webkit-transform: rotateX(-180deg) translateY(0vh) translateZ(43vh);
-          transform: rotateX(-180deg) translateY(0vh) translateZ(43vh);
-  background: #93bf98;
-  background-image: url("../img/piglet.png");
+    -webkit-transform: rotateX(-180deg) translateY(0vh) translateZ(43vh);
+    transform: rotateX(-180deg) translateY(0vh) translateZ(43vh);
+    background: #93bf98;
+    background-image: url("../img/piglet.png");
     background-repeat: no-repeat;
     background-position: left bottom
 }
 
 #tab-top:checked ~ .cube {
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
 }
 
 #tab-front:checked ~ .cube {
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
 }
 
 #tab-bottom:checked ~ .cube {
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
 }
 
 #tab-back:checked ~ .cube {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
 }
 
 #tab-top:checked + .tab {
-  -webkit-transform: translateZ(210px) translateX(-80px);
-          transform: translateZ(210px) translateX(-80px);
+    -webkit-transform: translateZ(210px) translateX(-80px);
+    transform: translateZ(210px) translateX(-80px);
 }
 #tab-bottom:checked + .tab {
-  -webkit-transform: translateZ(210px) translateX(-80px);
-          transform: translateZ(210px) translateX(-80px);
+    -webkit-transform: translateZ(210px) translateX(-80px);
+    transform: translateZ(210px) translateX(-80px);
 }
 #tab-back:checked + .tab {
-  -webkit-transform: translateZ(210px) translateX(-80px);
-          transform: translateZ(210px) translateX(-80px);
+    -webkit-transform: translateZ(210px) translateX(-80px);
+    transform: translateZ(210px) translateX(-80px);
 }
 #tab-front:checked + .tab {
-  -webkit-transform: translateZ(210px) translateX(-80px);
-          transform: translateZ(210px) translateX(-80px);
+    -webkit-transform: translateZ(210px) translateX(-80px);
+    transform: translateZ(210px) translateX(-80px);
 }
 
 @-webkit-keyframes GradAnim {
