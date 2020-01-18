@@ -308,6 +308,49 @@ h1 {
     }
 }
 
+
+
+
+
+@media screen and (min-width: 319px) { 
+    h1{
+        font-size: 14px;
+    }
+    .lyrics{
+        font-size: 9px;
+        line-height: 1.2;
+    }
+
+    .tab:nth-child(2) {
+        top: 3vh;
+        left: -20vw;
+    }
+    #tab-top:checked+.tab, #tab-front:checked+.tab, #tab-bottom:checked+.tab, #tab-back:checked+.tab{
+        transform: translateZ(50px);
+    }    
+    .tab:nth-child(4) {
+        top: 3vh;
+        left: 3vw;
+    }
+
+    .tab:nth-child(6) {
+        top: 3vh;
+        left: 20vw;
+    }
+
+    .tab:nth-child(8) {
+        top: 3vh;
+        left: 43vw;
+        z-index: 10;
+    }
+
+    .tab {
+       
+        width: 30vw;
+        height: 6vh;
+        font-size: 11px;
+    }
+}
 @media screen and (min-width: 768px) {
     
     .tab-content .lyrics {
@@ -336,36 +379,6 @@ h1 {
         height: 10vh;
     }
 }
-
 @media screen and (min-width: 1100px) {
 
-}
-
-@media screen and (min-width: 319px) { 
-
-    .tab-content .lyrics {
-        padding-right: 50px;
-    }
-
-    .tab:nth-child(2) {
-        top: 20vh;
-    }
-
-    .tab:nth-child(4) {
-        top: 30vh;
-    }
-
-    .tab:nth-child(6) {
-        top: 41vh;
-    }
-
-    .tab:nth-child(8) {
-        top: 52vh;
-    }
-
-    .tab {
-        right: -19vw;
-        width: 17vw;
-        height: 10vh;
-    }
 }

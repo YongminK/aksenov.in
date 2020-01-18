@@ -250,8 +250,9 @@ A red 200 x 200 x 200px cube
         width: 52%;
     }
     .cube03{
-        padding: 100% 0 1% 0;
-        width: 86%;
+        padding: 55vh 0 0 0;
+        width: 118%;
+        margin-top: 19vh;
     }
 }
 @media screen and (min-width: 768px){
