@@ -59,6 +59,7 @@ A red 200 x 200 x 200px cube
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 .qube {
@@ -71,6 +72,16 @@ A red 200 x 200 x 200px cube
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    transition: opacity 10s ease;
+    -webkit-transform-origin: 0 200px -100px;
+    transform-origin: 0 200px -100px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    
 }
 
 .sq-25 {
@@ -89,8 +100,7 @@ A red 200 x 200 x 200px cube
     margin-top: 27vh;
 }
 
-.qube>* {
-    background: #666;
+.qube>* {    
     background-size: 100%;
 }
 
@@ -151,10 +161,10 @@ A red 200 x 200 x 200px cube
     transform: rotateY(180deg) rotateX(90deg) translateY(50%) rotateX(-90deg);
 }
 
-.qube>.back:after,
+/* .qube>.back:after,
 .qube.faces>*:nth-child(3):after {
     background: rgba(0, 0, 0, 0.6);
-}
+} */
 
 .qube.x-axis>.back,
 .qube.x-axis.faces>*:nth-child(3) {
@@ -175,10 +185,10 @@ A red 200 x 200 x 200px cube
     transform: translateX(-50%) rotateY(-90deg);
 }
 
-.qube>.left:after,
+/* .qube>.left:after,
 .qube.faces>*:nth-child(2):after {
     background: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .qube.textured>.left,
 .qube.textured.faces>*:nth-child(2) {
@@ -192,10 +202,10 @@ A red 200 x 200 x 200px cube
     transform: translateX(50%) rotateY(90deg);
 }
 
-.qube>.right:after,
+/* .qube>.right:after,
 .qube.faces>*:nth-child(4):after {
     background: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .qube.textured>.right,
 .qube.textured.faces>*:nth-child(4) {
@@ -209,10 +219,10 @@ A red 200 x 200 x 200px cube
     transform: translateY(-50%) rotateX(90deg);
 }
 
-.qube>.top:after,
+/* .qube>.top:after,
 .qube.faces>*:nth-child(5):after {
     background: rgba(0, 0, 0, 0.2);
-}
+} */
 
 .qube.textured>.top,
 .qube.textured.faces>*:nth-child(5) {
@@ -226,12 +236,30 @@ A red 200 x 200 x 200px cube
     transform: translateY(50%) rotateX(-90deg);
 }
 
-.qube>.bottom:after,
+/* .qube>.bottom:after,
 .qube.faces>*:nth-child(6):after {
     background: rgba(0, 0, 0, 0.7);
-}
+} */
 
 .qube.textured>.bottom,
 .qube.textured.faces>*:nth-child(6) {
     background-position: -200% -100%;
+}
+@media screen and (min-width: 319px){
+    .sq-25{
+        width: 52%;
+    }
+    .cube03{
+        padding: 100% 0 1% 0;
+        width: 86%;
+    }
+}
+@media screen and (min-width: 768px){
+    .sq-25{
+        width: 54%;
+    }
+    .cube03{
+        padding: 85% 0 1% 0;
+        width: 100%;
+    }
 }
