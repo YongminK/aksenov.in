@@ -357,7 +357,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .lyrics, .rare, .never {
@@ -368,13 +368,6 @@ h1 {
     .tab:nth-child(2) {
         top: 12vh;
         left: 58vw;
-    }
-
-    #tab-top:checked+.tab,
-    #tab-front:checked+.tab,
-    #tab-bottom:checked+.tab,
-    #tab-back:checked+.tab {
-        transform: translateZ(50px);
     }
 
     .tab:nth-child(4) {
@@ -402,4 +395,34 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1100px) {}
+@media screen and (min-width: 1100px) {
+    .tab:nth-child(2) {
+        top: 12vh;
+        left: 51vw;
+    }
+
+    .tab:nth-child(4) {
+        top: 23vh;
+        left: 51vw;
+    }
+
+    .tab:nth-child(6) {
+        top: 34vh;
+        left: 51vw;
+    }
+
+    .tab:nth-child(8) {
+        top: 45vh;
+        left: 51vw;
+        z-index: 10;
+    }
+    .lyrics{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .tab {
+        width: 14vw;
+        height: 11vh;
+        font-size: 14px;       
+    }
+}
