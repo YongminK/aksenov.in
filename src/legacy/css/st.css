@@ -9,7 +9,20 @@
 #infovis {
     position:relative;
     width:100%;
-    height: 320px;
+    height: 290px;
     margin:auto;
     overflow:hidden;
+}
+div#infovis-canvaswidget{
+    left: -25%;
+}
+@media screen and (min-width: 319px){
+    #infovis, #log{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    #infovis, #log{
+        display: block;
+    }
 }

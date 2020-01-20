@@ -118,10 +118,7 @@ html {
 }
 
 .tab {
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    right: 0;
+    position: absolute;   
     line-height: 70px;
     font-weight: 300;
     font-size: 13pt;
@@ -136,8 +133,7 @@ html {
     /* i hate you, google chrome, i really do */
 }
 
-.tab:nth-child(2) {
-    top: 20vh;
+.tab:nth-child(2) {    
     background: linear-gradient(90deg, #d8ccad, #d8cc66);
     background-size: 150% 150%;
     animation-name: GradAnim;
@@ -145,8 +141,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.tab:nth-child(4) {
-    top: 160px;
+.tab:nth-child(4) {  
     background: linear-gradient(90deg, #d8b58f, #d8b511);
     background-size: 150% 150%;
     animation-name: GradAnim;
@@ -154,8 +149,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.tab:nth-child(6) {
-    top: 260px;
+.tab:nth-child(6) {   
     background: linear-gradient(90deg, #9399bf, #6666bf);
     background-size: 150% 150%;
     animation-name: GradAnim;
@@ -163,8 +157,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.tab:nth-child(8) {
-    top: 360px;
+.tab:nth-child(8) {    
     z-index: 9;
     /* i hate you, google chrome, i really do */
     background: linear-gradient(90deg, #93bf98, #11bf11);
@@ -242,8 +235,8 @@ h1 {
 }
 
 #tab-back:checked~.qube-preserve3d {
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
 }
 
 #tab-top:checked+.tab {
@@ -352,31 +345,42 @@ h1 {
     }
 }
 @media screen and (min-width: 768px) {
-    
-    .tab-content .lyrics {
-        padding-right: 50px;
+    h1{
+        font-size: 14px;
+    }
+    .lyrics{
+        font-size: 9px;
+        line-height: 1.2;
     }
 
     .tab:nth-child(2) {
-        top: 20vh;
+        top: 12vh;
+        left: 58vw;
     }
-
+    #tab-top:checked+.tab, #tab-front:checked+.tab, #tab-bottom:checked+.tab, #tab-back:checked+.tab{
+        transform: translateZ(50px);
+    }    
     .tab:nth-child(4) {
-        top: 30vh;
+        top: 23vh;
+        left: 58vw;
     }
 
     .tab:nth-child(6) {
-        top: 41vh;
+        top: 34vh;
+        left: 58vw;
     }
 
     .tab:nth-child(8) {
-        top: 52vh;
+        top: 45vh;
+        left: 58vw;
+        z-index: 10;
     }
 
     .tab {
-        right: -19vw;
-        width: 17vw;
-        height: 10vh;
+       
+        width: 14vw;
+        height: 11vh;
+        font-size: 11px;
     }
 }
 @media screen and (min-width: 1100px) {
