@@ -264,9 +264,17 @@ A red 200 x 200 x 200px cube
         width: 100%;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1100px){
     .sq-25{
         width: 45%;
+    }   
+}
+@media screen and (min-width: 1400px){
+    .sq-25{
+        width: 38%;
+    }   
+    .cube03{
+        margin-top: 23vh;
+        width: 106%;
     }
-   
 }

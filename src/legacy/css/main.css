@@ -414,10 +414,39 @@ h1 {
     .tab:nth-child(8) {
         top: 45vh;
         left: 51vw;
-        z-index: 10;
     }
     .lyrics{
         margin-right: 5%;
+        margin-left: 5%;
+    }
+    .tab {
+        width: 14vw;
+        height: 11vh;
+        font-size: 14px;       
+    }
+}
+@media screen and (min-width: 1400px) {
+    .tab:nth-child(2) {
+        top: 19vh;
+        left: 45vw;
+    }
+
+    .tab:nth-child(4) {
+        top: 30vh;
+        left: 45vw;
+    }
+
+    .tab:nth-child(6) {
+        top: 41vh;
+        left: 45vw;
+    }
+
+    .tab:nth-child(8) {
+        top: 52vh;
+        left: 45vw;
+    }
+    .lyrics{
+        margin-right: 6%;
         margin-left: 5%;
     }
     .tab {
