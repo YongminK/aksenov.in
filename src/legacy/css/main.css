@@ -118,7 +118,7 @@ html {
 }
 
 .tab {
-    position: absolute;   
+    position: absolute;
     line-height: 70px;
     font-weight: 300;
     font-size: 13pt;
@@ -133,7 +133,7 @@ html {
     /* i hate you, google chrome, i really do */
 }
 
-.tab:nth-child(2) {    
+.tab:nth-child(2) {
     background: linear-gradient(90deg, #d8ccad, #d8cc66);
     background-size: 150% 150%;
     animation-name: GradAnim;
@@ -141,7 +141,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.tab:nth-child(4) {  
+.tab:nth-child(4) {
     background: linear-gradient(90deg, #d8b58f, #d8b511);
     background-size: 150% 150%;
     animation-name: GradAnim;
@@ -149,7 +149,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.tab:nth-child(6) {   
+.tab:nth-child(6) {
     background: linear-gradient(90deg, #9399bf, #6666bf);
     background-size: 150% 150%;
     animation-name: GradAnim;
@@ -157,7 +157,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.tab:nth-child(8) {    
+.tab:nth-child(8) {
     z-index: 9;
     /* i hate you, google chrome, i really do */
     background: linear-gradient(90deg, #93bf98, #11bf11);
@@ -200,14 +200,14 @@ h1 {
     background: #d8b58f;
 }
 
-.tab-content-top {   
+.tab-content-top {
     background: #d8ccad;
     background-image: url("../img/me.png");
     background-repeat: no-repeat;
     background-position: right bottom
 }
 
-.tab-content-bottom {    
+.tab-content-bottom {
     background: #9399bf;
 }
 
@@ -220,7 +220,7 @@ h1 {
 }
 
 #tab-top:checked~.qube-preserve3d {
-    -webkit-transform: rotateX(-90deg); 
+    -webkit-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
 }
 
@@ -305,11 +305,12 @@ h1 {
 
 
 
-@media screen and (min-width: 319px) { 
-    h1{
+@media screen and (min-width: 319px) {
+    h1 {
         font-size: 14px;
     }
-    .lyrics{
+
+    .lyrics {
         font-size: 9px;
         line-height: 1.2;
     }
@@ -318,9 +319,14 @@ h1 {
         top: 3vh;
         left: -20vw;
     }
-    #tab-top:checked+.tab, #tab-front:checked+.tab, #tab-bottom:checked+.tab, #tab-back:checked+.tab{
+
+    #tab-top:checked+.tab,
+    #tab-front:checked+.tab,
+    #tab-bottom:checked+.tab,
+    #tab-back:checked+.tab {
         transform: translateZ(50px);
-    }    
+    }
+
     .tab:nth-child(4) {
         top: 3vh;
         left: 3vw;
@@ -338,18 +344,24 @@ h1 {
     }
 
     .tab {
-       
+
         width: 30vw;
         height: 6vh;
         font-size: 11px;
+        padding-left: 5px;
+    }
+    .never, .rare{
+        font-size: 9px;
     }
 }
+
 @media screen and (min-width: 768px) {
-    h1{
+    h1 {
         font-size: 14px;
     }
-    .lyrics{
-        font-size: 9px;
+
+    .lyrics, .rare, .never {
+        font-size: 14px;
         line-height: 1.2;
     }
 
@@ -357,9 +369,14 @@ h1 {
         top: 12vh;
         left: 58vw;
     }
-    #tab-top:checked+.tab, #tab-front:checked+.tab, #tab-bottom:checked+.tab, #tab-back:checked+.tab{
+
+    #tab-top:checked+.tab,
+    #tab-front:checked+.tab,
+    #tab-bottom:checked+.tab,
+    #tab-back:checked+.tab {
         transform: translateZ(50px);
-    }    
+    }
+
     .tab:nth-child(4) {
         top: 23vh;
         left: 58vw;
@@ -377,12 +394,12 @@ h1 {
     }
 
     .tab {
-       
+        text-align: center;
         width: 14vw;
         height: 11vh;
-        font-size: 11px;
+        font-size: 14px;
+        white-space: pre;
     }
 }
-@media screen and (min-width: 1100px) {
 
-}
+@media screen and (min-width: 1100px) {}
