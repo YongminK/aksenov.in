@@ -275,7 +275,8 @@ A red 200 x 200 x 200px cube
     }   
     .cube03{
         margin-top: 23vh;
-        width: 106%;
+        width: 100%;
+        padding: 50% 0 0 0;
     }
 }
 @media screen and (min-width: 2000px){
