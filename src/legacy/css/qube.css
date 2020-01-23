@@ -278,3 +278,12 @@ A red 200 x 200 x 200px cube
         width: 106%;
     }
 }
+@media screen and (min-width: 2000px){
+    .sq-25{
+        width: 33%;
+    }   
+    .cube03{
+        margin-top: 25vh;
+        width: 103%;
+    }
+}
