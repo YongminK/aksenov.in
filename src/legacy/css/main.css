@@ -460,31 +460,32 @@ h1 {
 @media screen and (min-width: 1400px) {
     .tab:nth-child(2) {
         top: 19vh;
-        left: 45vw;
+        left: 41vw;
     }
 
     .tab:nth-child(4) {
         top: 30vh;
-        left: 45vw;
+        left: 41vw;
     }
 
     .tab:nth-child(6) {
         top: 41vh;
-        left: 45vw;
+        left: 41vw;
     }
 
     .tab:nth-child(8) {
         top: 52vh;
-        left: 45vw;
+        left: 41vw;
     }
     .lyrics{
         margin-right: 6%;
         margin-left: 4%;
     }
     .tab {
-        width: 14vw;
+        width: 8vw;
         height: 11vh;
-        font-size: 14px;       
+        font-size: 14px;    
+           
     }
 }
 @media screen and (min-width: 2000px) {
