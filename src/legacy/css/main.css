@@ -300,8 +300,17 @@ h1 {
         background-position: 0% 50%
     }
 }
+.map-mobile li{
+    border: 0.5px solid burlywood;
+    background-color: rgba(255,255,255, 0.3);
+}
 
-
+.map-mobile .-hasSubmenu{
+    background-color: rgba(188, 122, 101,0.4);
+}
+.map-mobile .-active{
+    background-color: rgba(134, 236, 202, 0.4);
+}
 
 
 
@@ -353,6 +362,26 @@ h1 {
     .never, .rare{
         font-size: 9px;
     }
+    .map-mobile{
+        padding: 0 10px;
+    }
+    .map-mobile p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .map-mobile ul{
+        padding: 5px;
+    }
+    .map-mobile li{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .map-mobile a{
+        text-decoration: underline;
+    }
+    .map-mobile a[href='']{
+        color: rgb(102, 98, 98);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -392,6 +421,9 @@ h1 {
         height: 11vh;
         font-size: 14px;
         white-space: pre;
+    }
+    .map-mobile{
+        display: none;
     }
 }
 
