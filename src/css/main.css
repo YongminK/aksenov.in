@@ -26,6 +26,7 @@ body {
 .meny ul {
     margin-top: 10px;
     padding: 10px;
+    font-size: 16px;
 }
 
 .meny ul li {
