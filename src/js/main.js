@@ -3,7 +3,7 @@ var meny = Meny.create({
             contentsElement: document.querySelector('.contents'),
             position: 'left',
             width: 260,
-            angle: 60,
+            angle: 45,
             threshold: 40,
             overlap: 6,
             transitionDuration: '1s',

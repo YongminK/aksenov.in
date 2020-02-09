@@ -14,9 +14,10 @@ body {
     transform-origin: 80% 50% !important;
 }
 
-.meny h2 {
-    font-size: 24px;
+.meny p {
+    font-size: 20px;
     color: #ffb;
+    margin: 0;
 }
 
 .meny a {
@@ -25,6 +26,7 @@ body {
 
 .meny ul {
     margin-top: 10px;
+    margin: 0;
     padding: 10px;
     font-size: 16px;
 }
