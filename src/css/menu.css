@@ -237,9 +237,6 @@ element
     .Menu.-floating {
         min-width: 200px;
     }
-    li{
-        float: left;
-    }
     /* Animation speed of dropdown menus */
     .Menu li > ul,
     .Menu.-floating {
