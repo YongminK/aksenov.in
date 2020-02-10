@@ -12,6 +12,7 @@ body {
     padding: 10px;
     background-color: #A6A6A6;
     transform-origin: 80% 50% !important;
+    overflow: hidden;
 }
 
 .meny p {
@@ -107,6 +108,7 @@ html {
 .contents {
     height: 100%;
     background: #eee;
+    overflow: hidden;
 }
 
 #content {
